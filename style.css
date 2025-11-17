@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Jersey+25&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 
 @import "css/colors.css";
+@import "css/animations.css";
 
 /* CSS Reset */
 
 * {
   box-sizing: border-box;
-  /* font-family: JetBrains Mono; */
   margin: 0;
   padding: 0;
 }
@@ -31,7 +31,6 @@
 
 
 .header__btn {
-  align-items: right;
   border: none;
   display: flex;
   flex-flow: column nowrap;
@@ -39,6 +38,7 @@
   padding: 1rem;
   text-decoration: none;
   width: 8rem;
+  font-size: 1rem;
 }
 
 .header__btn--style {
@@ -46,10 +46,10 @@
   border-radius: 40px;
   border: solid white 1px;
   color: white;
-  margin: 5px;
+  margin: 0.313rem;
 }
 
-/* Main Blocks */
+/* Main Blocks - Title, description text, card */
 
 .main {
   background-color: var(--main-background-color);
@@ -57,7 +57,8 @@
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
-  min-height: calc(100vh - 87px);
+  /* min-height: calc(100vh - 87px);  */ 
+  height: 100vh;
 }
 
 .main__titre {
@@ -65,7 +66,7 @@
   justify-content: center;
   font-weight: 900;
   letter-spacing: 4px;
-  font-size: 37.2px;
+  font-size: 2.618rem;
 }
 
 .main__sous-titre {
@@ -77,8 +78,8 @@
   /* padding-right: 1rem; */ 
 
   display: block;
-  overflow hidden;
-  font-size: 23px;
+  overflow: hidden;
+  font-size: 1.618rem;
   text-align: center;
   padding-top: 110px;
   padding-left: 1rem;
@@ -92,14 +93,15 @@
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
-  margin-top: 1rem;
   margin-left: auto;
   margin-right: auto;
-  height: 300px;
-  width: 200px;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  height: 18.75rem;
+  width: 16rem;
   border: solid white 1px;
   border-radius: 40px;
-  box-shadow: 5px 5px 10px 0;
+  /* box-shadow: 5px 5px 10px 0; */
 }
 
 .main__card__img {
@@ -116,6 +118,7 @@
 
 .main__cta {
   align-items: center;
+  margin-top: 2rem;
   background-color: var(--accent-color);
   border-radius: 40px;
   color: black;
@@ -146,6 +149,7 @@ a {
 .footer__media {
   display: flex;
   flex-flow: row nowrap;
+  margin-top: 2rem;
 }
 
 .footer__icon {
@@ -160,153 +164,5 @@ a {
   font-size: 0.5rem;
   text-decoration: underline;
   text-underline-offset: 3px;
-}
-
-
-
-/* ANIMATION */
-
-.container {
-  color: white;
-  display: flex;
-  flex-flow: column nowrap;
-  font-size: 36px;
-  font-weight: bold;
-  justify-content: center;
-  position: fixed;
-  text-align: center;
-  text-transform: uppercase;
-  width: 100%;
-  font-family: JetBrains Mono;
-}
-
-.flip {
-  height: 50px;
-  overflow: hidden;
-  font-family: "Jersey 25";
-}
-
-.flip div div {
-  color: var(--accent-color);
-  margin-bottom: 60px;
-  display: inline-block;
-}
-
-.flip div:first-child {
-  animation: show 7s linear infinite;
-  animation-delay: 1.5s;
-}
-
-.flip div div {
-  border-radius: 40px;
-}
-
-.flip div:first-child div {
-  border-radius: 40px;
-}
-
-.flip div:last-child div {
-  border-radius: 40px;
-}
-
-@keyframes show {
-  0% {
-    margin-top: -270px;
-  }
-
-  10% {
-    margin-top: -180px;
-  }
-
-  20% {
-    margin-top: -180px;
-  }
-
-  30% {
-    margin-top: -90px;
-  }
-
-  40% {
-    margin-top: -90px;
-  }
-
-  50% {
-    margin-top: 0px;
-  }
-
-  60% {
-    margin-top: 0px;
-  }
-
-  80% {
-    margin-top: 90px;
-  }
-
-  99.9% {
-    margin-top: 90px;
-  }
-
-  100% {
-    margin-top: -270px;
-  }
-}
-
-
-/* TXT SLIDEUP ANIMATION */ 
-
-span.offset-header>span {
-  animation: slideup;
-  animation-duration: 1.5s;
-  animation-timing-function: cubic-bezier(0, .37, .28, 1);
-  display: block;
-}
-
-@keyframes slideup {
-
-  0% {
-    transform: translateY(100%);
-    opacity: 0;
-  }
-
-  10% {
-    opacity: 0.1;
-  }
-
-  20% {
-    opacity: 0.2;
-  }
-
-  30% {
-    opacity: 0.3;
-  }
-
-  40% {
-    opacity: 0.4;
-  }
-
-  50% {
-    opacity: 0.5;
-  }
-
-  60% {
-    opacity: 0.6;
-  }
-
-  70% {
-    opacity: 0.7;
-  }
-
-  80% {
-    opacity: 0.8;
-  }
-
-  90% {
-    opacity: 0.9;
-  }
-
-  100% {
-    transform: translateY(0%);
-    opacity: 1;
-  }
 }
 

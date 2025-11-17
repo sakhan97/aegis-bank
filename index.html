@@ -9,20 +9,20 @@
 </head>
 
 <body>
-  <header class="header">
-    <a class="header__link" href="#">
-      <img class="header__logo" src="icons/AEGIS.svg" alt="Logo">
-    </a>
-    <div class="header__btn">
-      <button class="header__btn--style" type="button">Log</button>
-      <button class="header__btn--style" type="button">Sub</button>
-    </div>
-    <img src="icons/burger-white.svg" alt="Menu burger">
-
-  </header>
-
   <main class="main">
-    <!-- <h1 class="main__titre">La néobanque <br>éthique & <br>transparente</h1> -->
+    <header class="header">
+      <a class="header__link" href="#">
+        <img class="header__logo" src="icons/AEGIS.svg" alt="Logo">
+      </a>
+      <div class="header__btn">
+        <button class="header__btn--style" type="button">Log</button>
+        <button class="header__btn--style" type="button">Sub</button>
+      </div>
+      <img src="icons/burger-white.svg" alt="Menu burger">
+
+    </header>
+
+    <!-- container for flipping between multiple words in H1  -->
 
     <div class="container">
       la néobanque
@@ -45,13 +45,9 @@
       </div>
     </div>
 
+    <!-- Description text after title -->
 
-    <!-- <p class="main__sous-titre">"Une néobanque éthique et transparente, qui place vos valeurs au cœur de la finance, -->
-    <!--   pour un -->
-    <!--   futur plus -->
-    <!--   responsable et durable."</p> -->
-
-          <h2 class="main__sous-titre">
+    <h2 class="main__sous-titre">
       <span class="offset-header">
         <span>Une néobanque éthique et transparente,</span>
       </span>
@@ -63,16 +59,20 @@
       </span>
     </h2>
 
+    <!-- Promotionnal card -->
 
-    <div class="main__card">
+    <div class="main__card border_anim">
       <img class="main__card__img" src="img/debit-card-svgrepo-com.svg" alt="card">
       <h2 class="main__card__text">20$ offert <br> Mars 2026</h2>
     </div>
 
+    <!--  CTA  -->
 
-    <!-- <button class="main__cta" type="button">Telecharger l'app</button> -->
-    <a class="main__cta" href="">Telecharger
+    <a class="main__cta gelatine" href="">Telecharger
       l'app</a>
+
+    <!-- Footer with links and RGPD  -->
+
     <footer class="footer">
       <div class="footer__media">
         <a target="_blank" href="https://bsky.app/"><img class="footer__icon" src="icons/bluesky.svg" alt="Bluesky"></a>
