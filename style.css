@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Jersey+25&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
-
 @import "css/colors.css";
 @import "css/animations.css";
+@import "css/fonts.css";
 
 /* CSS Reset */
 
@@ -21,7 +20,7 @@
   flex-flow: row nowrap;
   justify-content: space-between;
   padding: 0 1rem;
-  font-family: JetBrains Mono;
+  font-family: var(--font-main);
 }
 
 .header__link {
@@ -85,7 +84,7 @@
   padding-left: 1rem;
   padding-right: 1rem;
   padding-bottom: 1rem;
-  font-family: JetBrains Mono;
+  font-family: var(--font-main);
 }
 
 
@@ -101,7 +100,6 @@
   width: 16rem;
   border: solid white 1px;
   border-radius: 40px;
-  /* box-shadow: 5px 5px 10px 0; */
 }
 
 .main__card__img {
@@ -113,7 +111,7 @@
   font-size: 1rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  font-family: JetBrains Mono;
+  font-family: var(--font-main);
 }
 
 .main__cta {
@@ -123,14 +121,14 @@
   border-radius: 40px;
   color: black;
   display: flex;
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: 900;
   height: 50px;
   justify-content: center;
   margin: auto;
   text-decoration: none;
   width: 250px;
-  font-family: JetBrains Mono;
+  font-family: var(--font-accent);
 }
 
 
