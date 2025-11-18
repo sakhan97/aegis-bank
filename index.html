@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
   <meta charset="UTF-8">
@@ -9,22 +9,29 @@
 </head>
 
 <body>
-  <main class="main">
-    <header class="header">
+  <header>
+    <nav>
       <a class="header__link" href="#">
         <img class="header__logo" src="icons/AEGIS.svg" alt="Logo">
       </a>
-      <div class="header__btn">
-        <button class="header__btn--style" type="button">Log</button>
-        <button class="header__btn--style" type="button">Sub</button>
+      <div class="nav__pages">
+        <a href="#">Solutions streamers</a>
+        <a href="#">Finacement creatifs</a>
+        <a href="#">Ecosysteme pro</a>
       </div>
-      <img src="icons/burger-white.svg" alt="Menu burger">
+      <div class="header__btn__container">
+        <a class="header__btn--style">Log</a>
+        <a class="header__btn--style">Sub</a>
+      </div>
+      <img class="header__burger" src="icons/burger-white.svg" alt="Menu burger">
 
-    </header>
+    </nav>
+  </header>
+  <main>
 
     <!-- container for flipping between multiple words in H1  -->
 
-    <div class="container">
+    <div class="flip-container">
       la néobanque
       <div class="flip">
         <div>
@@ -68,12 +75,12 @@
 
     <!--  CTA  -->
 
-    <a class="main__cta gelatine" href="">Telecharger
+    <a class="main__cta gelatine" href="#">Telecharger
       l'app</a>
 
     <!-- Footer with links and RGPD  -->
 
-    <footer class="footer">
+    <footer>
       <div class="footer__media">
         <a target="_blank" href="https://bsky.app/"><img class="footer__icon" src="icons/bluesky.svg" alt="Bluesky"></a>
         <a target="_blank" href="https://web.telegram.org/a/"><img class="footer__icon" src="icons/telegram.svg"

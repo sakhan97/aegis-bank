@@ -3,7 +3,7 @@
 
 /* Title  flip - fait derouler 3 div vers le bas avec un overflow hidden en haut et en bas pour afficher un seul div*/
 
-.container {
+.flip-container {
   color: white;
   display: flex;
   flex-flow: column nowrap;
