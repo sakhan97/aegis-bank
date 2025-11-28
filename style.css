@@ -1,7 +1,7 @@
-@import "css/colors.css";
-@import "css/animations.css";
-@import "css/fonts.css";
-@import "css/media.css";
+@import "./styles/colors.css";
+@import "./styles/animations.css";
+@import "./styles/fonts.css";
+@import "./styles/media.css";
 
 /* CSS Reset */
 * {
@@ -86,7 +86,7 @@ nav {
   z-index: 10;
 }
 
-.header__btn--style {
+.header__btn--design {
   background-color: var(--main-background-color);
   border-radius: 40px;
   border: solid white 1px;
